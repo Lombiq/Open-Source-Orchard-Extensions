@@ -4,7 +4,7 @@ using System.Web.Routing;
 using Orchard;
 using Orchard.Mvc.Filters;
 
-namespace LombiqSpc.Filters {
+namespace Lombiq.Spc.Filters {
     public class LayoutFilter : FilterProvider, IResultFilter {
         private readonly IWorkContextAccessor _wca;
 

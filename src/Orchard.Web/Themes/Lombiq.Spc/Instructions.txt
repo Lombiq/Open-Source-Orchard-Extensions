@@ -1,9 +1,9 @@
-/* Bind Custom Theme:LombiqSpc */
+/* Bind Custom Theme:Lombiq.Spc */
 
 
 *** SEARCH NOTICE ***
 
-The LombiqSpc theme uses a custom Search Form,
+The Lombiq.Spc theme uses a custom Search Form,
 so the Search Feature should be enabled or the search box won't work.
 
 The Search feature can be installed by going to:
