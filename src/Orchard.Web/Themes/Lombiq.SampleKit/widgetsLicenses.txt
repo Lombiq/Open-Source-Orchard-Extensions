@@ -1,0 +1,54 @@
+﻿/**************************************************************************************************/
+/* Flickr Photo Gallery Plugin License ************************************************************/
+/**************************************************************************************************/
+
+jQuery plug-in
+Flickr Photo Gallery
+Developed by J.P. Given (http://johnpatrickgiven.com) 
+Edits by Bind (http://bind.pt) to use PrettyPhoto
+Usage: anyone so long as credit is left alone...oh and get your own API key ;)
+
+
+/**************************************************************************************************/
+/* Nivo Slider jQuery Plugin License **************************************************************/
+/**************************************************************************************************/
+
+The MIT License (MIT)
+Copyright (c) 2011 Gilbert Pellegrom
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+and associated documentation files (the “Software”), to deal in the Software without restriction, 
+including without limitation the rights to use, copy, modify, merge, publish, distribute, 
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or 
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE 
+AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+/**************************************************************************************************/
+/* PrettyPhoto License ****************************************************************************/
+/**************************************************************************************************/
+
+"Copyright prettyPhoto is totally free to use, it is licensed under Creative Commons Attribution 2.5.
+So you can use it in all you projects even commercial ones. Please note that if you plan to make 
+money using prettyPhoto, donations are more than welcome." 
+
+
+/**************************************************************************************************/
+/* Twitter plugin License *************************************************************************/
+/**************************************************************************************************/
+
+Created by Damien du Toit:
+http://coda.co.za/blog/2008/10/26/jquery-plugin-for-twitter
+
+Modified by Bind
+
+Licensed under a Creative Commons Attribution-Non-Commercial 3.0 Unported License
+http://creativecommons.org/licenses/by-nc/3.0/
