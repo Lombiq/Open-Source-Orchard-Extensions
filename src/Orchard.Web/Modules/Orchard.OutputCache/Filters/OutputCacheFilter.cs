@@ -9,6 +9,7 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Orchard.Core.Feeds.Rss;
 using Orchard.OutputCache.Models;
 using Orchard.OutputCache.Services;
 using Orchard.Caching;
@@ -129,6 +130,7 @@ namespace Orchard.OutputCache.Filters {
                 return;
             }
 
+
             // caches the default cache duration to prevent a query to the settings
             _cacheDuration = _cacheManager.Get("CacheSettingsPart.Duration",
                 context => {
@@ -171,13 +173,18 @@ namespace Orchard.OutputCache.Filters {
                 }
             );
 
-            // caches the ignored urls to prevent a query to the settings
+            // caches the debug mode
             _debugMode = _cacheManager.Get("CacheSettingsPart.DebugMode",
                 context => {
                     context.Monitor(_signals.When(CacheSettingsPart.CacheKey));
                     return _workContext.CurrentSite.As<CacheSettingsPart>().DebugMode;
                 }
             );
+            
+            // don't cache ignored url ?
+            if (IsIgnoredUrl(filterContext.RequestContext.HttpContext.Request.AppRelativeCurrentExecutionFilePath, _ignoredUrls)) {
+                return;
+            }
 
             var queryString = filterContext.RequestContext.HttpContext.Request.QueryString;
             var parameters = new Dictionary<string, object>(filterContext.ActionParameters);
@@ -247,6 +254,11 @@ namespace Orchard.OutputCache.Filters {
         }
 
         public void OnActionExecuted(ActionExecutedContext filterContext) {
+
+            // only cache view results, but don't return already as we still need to process redirections
+            if (!(filterContext.Result is ViewResultBase) && !(filterContext.Result is RssResult)) {
+                _filter = null;
+            }
 
             // ignore error results from cache
             if (filterContext.HttpContext.Response.StatusCode != (int)HttpStatusCode.OK) {
@@ -334,27 +346,11 @@ namespace Orchard.OutputCache.Filters {
             // save the result only if the content can be intercepted
             if (_filter == null) return;
 
-            // only for ViewResult right now, as we don't want to handle redirects, HttpNotFound, ...
-            if (filterContext.Result as ViewResultBase == null) {
-                Logger.Debug("Ignoring none ViewResult response");
-                return;
-            }
-
             // check if there is a specific rule not to cache the whole route
             var configurations = _cacheService.GetRouteConfigurations();
             var route = filterContext.Controller.ControllerContext.RouteData.Route;
             var key = _cacheService.GetRouteDescriptorKey(filterContext.HttpContext, route);
             var configuration = configurations.FirstOrDefault(c => c.RouteKey == key);
-
-            // do not cache ?
-            if (configuration != null && configuration.Duration == 0) {
-                return;
-            }
-
-            // ignored url ?
-            if (IsIgnoredUrl(filterContext.RequestContext.HttpContext.Request.AppRelativeCurrentExecutionFilePath, _ignoredUrls)) {
-                return;
-            }
 
             // flush here to force the Filter to get the rendered content
             if (response.IsClientConnected)
@@ -368,6 +364,11 @@ namespace Orchard.OutputCache.Filters {
 
             response.Filter = null;
             response.Write(output);
+
+            // do not cache ?
+            if (configuration != null && configuration.Duration == 0) {
+                return;
+            }
 
             // default duration of specific one ?
             var cacheDuration = configuration != null && configuration.Duration.HasValue ? configuration.Duration.Value : _cacheDuration;
@@ -421,7 +422,9 @@ namespace Orchard.OutputCache.Filters {
 
             // an ETag is a string that uniquely identifies a specific version of a component.
             // we use the cache item to detect if it's a new one
-            response.Cache.SetETag(cacheItem.GetHashCode().ToString(CultureInfo.InvariantCulture));
+            if (response.Headers.Get("ETag") == null) {
+                response.Cache.SetETag(cacheItem.GetHashCode().ToString(CultureInfo.InvariantCulture));
+            }
 
             response.Cache.SetOmitVaryStar(true);
 

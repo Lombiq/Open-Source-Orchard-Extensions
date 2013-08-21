@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using Orchard.ContentManagement;
 using Orchard.ContentManagement.FieldStorage;
-using Orchard.ContentManagement.Utilities;
+using Orchard.MediaLibrary.Models;
 
 namespace Orchard.MediaLibrary.Fields {
     public class MediaLibraryPickerField : ContentField {
         private static readonly char[] separator = new [] {'{', '}', ','};
-        internal LazyField<IEnumerable<ContentItem>> _contentItems = new LazyField<IEnumerable<ContentItem>>();
+        internal Lazy<IEnumerable<MediaPart>> _contentItems;
  
         public int[] Ids {
             get { return DecodeIds(Storage.Get<string>()); }
             set { Storage.Set(EncodeIds(value)); }
         }
 
-        public IEnumerable<ContentItem> ContentItems { 
+        public IEnumerable<MediaPart> MediaParts { 
             get {
                 return _contentItems.Value;
             }
