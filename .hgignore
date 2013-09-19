@@ -13,5 +13,5 @@ artifacts
 robots.txt
 syntax: regexp
 (?i)src/.*bin/.*
-src/Orchard.Web/App_Data(?!.*/Localization).+
+src/Orchard.Web/App_Data/(?!Localization).+
 src/Orchard.Web/Media/(?!Web.config|OrchardLogo.png).+
