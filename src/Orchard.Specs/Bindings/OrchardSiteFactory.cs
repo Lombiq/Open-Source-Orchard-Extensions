@@ -20,6 +20,7 @@ namespace Orchard.Specs.Bindings {
         public void GivenIHaveInstalledOrchard(string virtualDirectory) {
             var webApp = Binding<WebAppHosting>();
 
+            // this is the list of module which will be copied over into the temporary Orchard folder
             webApp.GivenIHaveACleanSiteWith(
                 virtualDirectory,
                 TableData(

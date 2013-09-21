@@ -43,6 +43,7 @@
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>Orchard.Azure.Web</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -52,7 +53,10 @@
     <Folder Include="Profiles" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Orchard.Azure.WebContent\Bin\Startup\ConfigureIIS.cmd">
+    <Content Include="Orchard.Azure.WebContent\Bin\Startup\SetIdleTimeout.cmd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Orchard.Azure.WebContent\diagnostics.wadcfg">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
