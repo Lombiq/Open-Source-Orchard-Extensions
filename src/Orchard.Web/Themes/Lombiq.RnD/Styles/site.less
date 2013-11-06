@@ -1,0 +1,48 @@
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/reset";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/structure";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/general";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/navigation";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/breadcrumbs";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/pagination";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/misc";
+
+
+/* Layout */
+#layout-wrapper
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header */
+.zone-header
+{
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    #branding
+    {
+        margin: 0 0 1rem 0;
+        padding-left: 0;
+
+        a
+        {
+            height: 209px;
+            max-width: 560px;
+            margin: auto;
+            background-image: url(../Images/lombiq-rnd-logo.png);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            display: block;
+            outline: 0; // Although this is defined for every anchor it's somehow needed again
+            .hide-text();
+
+            &:hover, &:active, &:focus
+            {
+                text-decoration: none;
+            }
+        }
+    }
+}

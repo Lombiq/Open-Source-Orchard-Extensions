@@ -1,0 +1,7 @@
+Name: Lombiq RnD
+Author: Lombiq
+Website: http://lombiq.com
+Description: Basic theme for R&D.
+Version: 1.0
+BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme
+Tags: Lombiq, RnD
