@@ -1,4 +1,4 @@
-# Lombiq R&D readme
+# Lombiq R&D
 
 
 
