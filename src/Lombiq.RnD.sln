@@ -226,6 +226,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealtyShares.UserNotificati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.RestSharp", "Orchard.Web\Modules\Lombiq.RestSharp\Lombiq.RestSharp.csproj", "{E17D071F-E309-4087-9423-C4473ADA762E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.SpringHarvestChallenge", "Orchard.Web\Themes\Lombiq.SpringHarvestChallenge\Lombiq.SpringHarvestChallenge.csproj", "{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1264,6 +1266,16 @@ Global
 		{E17D071F-E309-4087-9423-C4473ADA762E}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{E17D071F-E309-4087-9423-C4473ADA762E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E17D071F-E309-4087-9423-C4473ADA762E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1371,5 +1383,6 @@ Global
 		{B4F763B2-F0F9-45EC-A073-B51EA7A771FA} = {6D494A58-697D-4C6C-9B4A-158D5BCB137E}
 		{300E4EC2-A8B9-4C60-89D7-73B2323E8351} = {6D494A58-697D-4C6C-9B4A-158D5BCB137E}
 		{DE7F0EC4-DAC2-48B4-924B-7D8A1E669EE6} = {6D494A58-697D-4C6C-9B4A-158D5BCB137E}
+		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B} = {6D494A58-697D-4C6C-9B4A-158D5BCB137E}
 	EndGlobalSection
 EndGlobal
