@@ -231,6 +231,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		WebEssentials-Settings.json = WebEssentials-Settings.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryOrchard.Theme", "Orchard.Web\Themes\TryOrchard.Theme\TryOrchard.Theme.csproj", "{03825249-F893-4A28-A027-55BD2D495DCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1259,6 +1261,16 @@ Global
 		{6B675FAF-5A94-4225-89A8-C7D6BD32366E}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{6B675FAF-5A94-4225-89A8-C7D6BD32366E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B675FAF-5A94-4225-89A8-C7D6BD32366E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1365,5 +1377,6 @@ Global
 		{E17D071F-E309-4087-9423-C4473ADA762E} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{2CAFF7B9-3EA2-4087-B09A-B4ADC440EB7B} = {6D494A58-697D-4C6C-9B4A-158D5BCB137E}
 		{6B675FAF-5A94-4225-89A8-C7D6BD32366E} = {350812A3-4F78-49D0-BB34-D05180751117}
+		{03825249-F893-4A28-A027-55BD2D495DCD} = {6D494A58-697D-4C6C-9B4A-158D5BCB137E}
 	EndGlobalSection
 EndGlobal
