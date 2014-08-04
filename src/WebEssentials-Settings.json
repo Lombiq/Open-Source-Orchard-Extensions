@@ -14,7 +14,7 @@
   "CoffeeScript": {
     "CompileOnBuild": false,
     "CompileOnSave": true,
-    "GenerateSourceMaps": false,
+    "GenerateSourceMaps": true,
     "LintOnBuild": false,
     "LintOnSave": true,
     "LintResultLocation": "Message",
@@ -94,7 +94,7 @@
     "CompileOnBuild": true,
     "CompileOnSave": true,
     "EnableChainCompilation": true,
-    "GenerateSourceMaps": false,
+    "GenerateSourceMaps": true,
     "MinifyInPlace": false,
     "OutputDirectory": "",
     "ProcessSourceMapsForEditorEnhancements": true,
