@@ -235,6 +235,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryOrchard.Theme", "Orchard
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Azure.MediaServices", "Orchard.Web\Modules\Orchard.Azure.MediaServices\Orchard.Azure.MediaServices.csproj", "{14A96B1A-9DC9-44C8-A675-206329E15263}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.LoginAsAnybody", "Orchard.Web\Modules\Lombiq.LoginAsAnybody\Lombiq.LoginAsAnybody.csproj", "{6858714C-450F-4E3C-A49B-729716138E28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1283,6 +1285,16 @@ Global
 		{14A96B1A-9DC9-44C8-A675-206329E15263}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{14A96B1A-9DC9-44C8-A675-206329E15263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14A96B1A-9DC9-44C8-A675-206329E15263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6858714C-450F-4E3C-A49B-729716138E28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1391,5 +1403,6 @@ Global
 		{6B675FAF-5A94-4225-89A8-C7D6BD32366E} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{03825249-F893-4A28-A027-55BD2D495DCD} = {6D494A58-697D-4C6C-9B4A-158D5BCB137E}
 		{14A96B1A-9DC9-44C8-A675-206329E15263} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
+		{6858714C-450F-4E3C-A49B-729716138E28} = {350812A3-4F78-49D0-BB34-D05180751117}
 	EndGlobalSection
 EndGlobal
