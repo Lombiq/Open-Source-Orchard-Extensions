@@ -95,7 +95,11 @@
   <ItemGroup>
     <Content Include="Styles\site.less" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Styles\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
   </ItemGroup>
