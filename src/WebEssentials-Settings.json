@@ -76,7 +76,8 @@
     ],
     "MakeMinified": true,
     "OutputDirectory": null,
-    "RunOnBuild": false
+    "RunOnBuild": false,
+    "MinificationMode": "KeepQuotes"
   },
   "JavaScript": {
     "AutoMinify": true,
@@ -88,10 +89,13 @@
     "LintResultLocation": "Message",
     "MakeMinified": true,
     "OutputDirectory": null,
-    "RunOnBuild": false
+    "RunOnBuild": false,
+    "EvalTreatment": "MakeImmediateSafe",
+    "RootDirectory": "/Scripts/",
+    "TermSemicolons": true
   },
   "Less": {
-    "CompileOnBuild": true,
+    "CompileOnBuild": false,
     "CompileOnSave": true,
     "EnableChainCompilation": true,
     "GenerateSourceMaps": true,
@@ -133,7 +137,8 @@
     "OutputDirectory": null,
     "OutputStyle": "Expanded",
     "ProcessSourceMapsForEditorEnhancements": true,
-    "ShowPreviewPane": true
+    "ShowPreviewPane": true,
+    "NumberPrecision": 5
   },
   "Sprite": {
     "CssOutputDirectory": null,
@@ -143,7 +148,8 @@
     "RunOnBuild": false,
     "ScssOutputDirectory": null,
     "UseAbsoluteUrl": false,
-    "UseFullPathForIdentifierName": true
+    "UseFullPathForIdentifierName": true,
+    "OutputDirectory": null
   },
   "SweetJs": {
     "CompileOnBuild": false,
@@ -156,7 +162,7 @@
   },
   "TypeScript": {
     "LintOnBuild": false,
-    "LintOnSave": false,
+    "LintOnSave": true,
     "LintResultLocation": "Message",
     "ShowPreviewPane": false
   }
