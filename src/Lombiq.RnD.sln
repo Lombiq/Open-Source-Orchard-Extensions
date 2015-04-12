@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}"
 EndProject
@@ -183,6 +183,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.PrettyGoodBootstrapBaseTheme", "Orchard.Web\Themes\Lombiq.PrettyGoodBootstrapBaseTheme\Lombiq.PrettyGoodBootstrapBaseTheme.csproj", "{300E4EC2-A8B9-4C60-89D7-73B2323E8351}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Four2n.MiniProfiler", "Orchard.Web\Modules\Four2n.MiniProfiler\Four2n.MiniProfiler.csproj", "{CAE8555E-F636-4C97-97A7-A041D3490D28}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6} = {2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.RoutePermissions", "Orchard.Web\Modules\Lombiq.RoutePermissions\Lombiq.RoutePermissions.csproj", "{ADE8B736-8798-4EEC-8BC3-F91E7C08CE4E}"
 EndProject
