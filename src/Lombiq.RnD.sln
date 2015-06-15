@@ -240,8 +240,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.ArchivedLinks", "Orc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.SmartNotifications", "Orchard.Web\Modules\Lombiq.SmartNotifications\Lombiq.SmartNotifications.csproj", "{520DBDE2-C0DB-4DBD-AB89-DFA79A46A645}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaKitty.PrivateMessaging", "Orchard.Web\Modules\MediaKitty.PrivateMessaging\MediaKitty.PrivateMessaging.csproj", "{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1300,16 +1298,6 @@ Global
 		{520DBDE2-C0DB-4DBD-AB89-DFA79A46A645}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{520DBDE2-C0DB-4DBD-AB89-DFA79A46A645}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{520DBDE2-C0DB-4DBD-AB89-DFA79A46A645}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.Coverage|Any CPU.Build.0 = Release|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.FxCop|Any CPU.Build.0 = Release|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1419,6 +1407,5 @@ Global
 		{6858714C-450F-4E3C-A49B-729716138E28} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{05E2BDEE-2F39-4807-AECB-C8EE5D81B296} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{520DBDE2-C0DB-4DBD-AB89-DFA79A46A645} = {350812A3-4F78-49D0-BB34-D05180751117}
-		{DD361907-EFB2-4B8C-B6AF-7A2F726B8291} = {350812A3-4F78-49D0-BB34-D05180751117}
 	EndGlobalSection
 EndGlobal
