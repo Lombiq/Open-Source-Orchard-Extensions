@@ -6,6 +6,10 @@ using Orchard.Workflows.Services;
 
 namespace Orchard.Users.Activities {
     public abstract class UserActivity : Event {
+        protected UserActivity() {
+            T = NullLocalizer.Instance;
+        }
+
         public Localizer T { get; set; }
 
         public override bool CanStartWorkflow {
@@ -48,6 +52,17 @@ namespace Orchard.Users.Activities {
 
         public override LocalizedString Description {
             get { return T("User is created."); }
+        }
+    }
+
+    [OrchardFeature("Orchard.Users.Workflows")]
+    public class UserLoggingInActivity : UserActivity {
+        public override string Name {
+            get { return "UserLoggingIn"; }
+        }
+
+        public override LocalizedString Description {
+            get { return T("User is logging in."); }
         }
     }
 

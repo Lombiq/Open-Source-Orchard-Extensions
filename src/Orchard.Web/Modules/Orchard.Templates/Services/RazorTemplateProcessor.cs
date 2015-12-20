@@ -7,22 +7,29 @@ using System.Web.Mvc;
 using System.Web.UI;
 using System.Web.WebPages;
 using Orchard.DisplayManagement.Implementation;
+using Orchard.Environment.Extensions;
 using Orchard.Logging;
 using Orchard.Templates.Compilation.Razor;
+
 namespace Orchard.Templates.Services {
+    [OrchardFeature("Orchard.Templates.Razor")]
     public class RazorTemplateProcessor : TemplateProcessorImpl {
         private readonly IRazorCompiler _compiler;
         private readonly HttpContextBase _httpContextBase;
+        private readonly IWorkContextAccessor _wca;
 
         public override string Type {
             get { return "Razor"; }
         }
 
         public RazorTemplateProcessor(
-            IRazorCompiler compiler, 
-            HttpContextBase httpContextBase) {
+            IRazorCompiler compiler,
+            HttpContextBase httpContextBase,
+            IWorkContextAccessor wca) {
+
             _compiler = compiler;
             _httpContextBase = httpContextBase;
+            _wca = wca;
             Logger = NullLogger.Instance;
         }
 
@@ -58,13 +65,26 @@ namespace Orchard.Templates.Services {
                         obj.WebPageContext = new WebPageContext(displayContext.ViewContext.HttpContext, obj as WebPageRenderingBase, model);
                         obj.ViewContext = shapeViewContext;
 
-                        obj.ViewData = new ViewDataDictionary(displayContext.ViewDataContainer.ViewData) {Model = model};
+                        obj.ViewData = new ViewDataDictionary(displayContext.ViewDataContainer.ViewData) { Model = model };
                         obj.InitHelpers();
                     }
                     else {
 
-                        obj.ViewData = new ViewDataDictionary(model);
+                        // Setup a fake view context in order to support razor syntax inside of HTML attributes,
+                        // for instance: <a href="@WorkContext.CurrentSite.BaseUrl">Homepage</a>.
+                        var viewData = new ViewDataDictionary(model);
+                        obj.ViewContext = new ViewContext(
+                            new ControllerContext(
+                                _httpContextBase.Request.RequestContext,
+                                new StubController()),
+                                new StubView(),
+                                viewData,
+                                new TempDataDictionary(),
+                                htmlWriter);
+
+                        obj.ViewData = viewData;
                         obj.WebPageContext = new WebPageContext(_httpContextBase, obj as WebPageRenderingBase, model);
+                        obj.WorkContext = _wca.GetContext();
                     }
 
                     obj.VirtualPath = templateVirtualPath ?? "~/Themes/Orchard.Templates";
@@ -74,6 +94,11 @@ namespace Orchard.Templates.Services {
 
             return buffer.ToString();
         }
-    }
 
+        private class StubController : Controller { }
+
+        private class StubView : IView {
+            public void Render(ViewContext viewContext, TextWriter writer) { }
+        }
+    }
 }
