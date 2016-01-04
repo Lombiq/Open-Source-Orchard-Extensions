@@ -332,7 +332,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.ArchivedLinks", "Orc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.SmartNotifications", "Orchard.Web\Modules\Lombiq.SmartNotifications\Lombiq.SmartNotifications.csproj", "{520DBDE2-C0DB-4DBD-AB89-DFA79A46A645}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambassadors.Theme", "Orchard.Web\Themes\Ambassadors.Theme\Ambassadors.Theme.csproj", "{B9924280-BF2A-491D-9B11-C5E971712E36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardAmbassadors.Theme", "Orchard.Web\Themes\Ambassadors.Theme\OrchardAmbassadors.Theme.csproj", "{B9924280-BF2A-491D-9B11-C5E971712E36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookSDK", "Orchard.Web\Modules\FacebookSDK\FacebookSDK.csproj", "{0202D865-09DD-4909-B651-73540EF87BF1}"
 EndProject
