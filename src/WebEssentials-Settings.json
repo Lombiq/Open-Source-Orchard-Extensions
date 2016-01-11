@@ -85,7 +85,8 @@
     "CustomAngularDirectiveList": null,
     "MinifyAngularBindingExpressions": false,
     "MinifyKnockoutBindingExpressions": false,
-    "ProcessableScriptTypeList": null
+    "ProcessableScriptTypeList": null,
+    "EnableMicrodataValidation": true
   },
   "JavaScript": {
     "AutoMinify": true,
@@ -106,12 +107,13 @@
     "CompileOnBuild": false,
     "CompileOnSave": true,
     "EnableChainCompilation": true,
-    "GenerateSourceMaps": true,
+    "GenerateSourceMaps": false,
     "MinifyInPlace": false,
     "OutputDirectory": "",
-    "ProcessSourceMapsForEditorEnhancements": true,
+    "ProcessSourceMapsForEditorEnhancements": false,
     "ShowPreviewPane": false,
-    "StrictMath": true
+    "StrictMath": false,
+    "AdjustRelativePaths": true
   },
   "LiveScript": {
     "CompileOnBuild": false,
@@ -134,7 +136,8 @@
     "MinifyInPlace": false,
     "OutputDirectory": null,
     "ShowPreviewPane": false,
-    "StrictBoldItalic": true
+    "StrictBoldItalic": true,
+    "GlobalPreviewCSSFile": null
   },
   "Scss": {
     "CompileOnBuild": false,
