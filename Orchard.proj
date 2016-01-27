@@ -86,15 +86,15 @@
     </MSBuild>
   </Target>
   <Target Name="Clean">
-    <MSBuild Projects="$(SrcFolder)\Lombiq.RnD.sln" Targets="Clean" />
+    <MSBuild Projects="$(SrcFolder)\Lombiq.OSOE.sln" Targets="Clean" />
     <RemoveDir Directories="$(BuildFolder)" ContinueOnError="true" />
     <RemoveDir Directories="$(ArtifactsFolder)" />
   </Target>
   <Target Name="Compile">
     <!-- Compile to "OutputFolder" -->
-    <MSBuild Projects="$(SrcFolder)\Lombiq.RnD.sln" Targets="Build" Properties="Configuration=Release;OutputPath=$(CompileFolder)" />
+    <MSBuild Projects="$(SrcFolder)\Lombiq.OSOE.sln" Targets="Build" Properties="Configuration=Release;OutputPath=$(CompileFolder)" />
     <!-- Compile to "regular" output folder for devs using VS locally -->
-    <MSBuild Projects="$(SrcFolder)\Lombiq.RnD.sln" Targets="Build" />
+    <MSBuild Projects="$(SrcFolder)\Lombiq.OSOE.sln" Targets="Build" />
   </Target>
   <Target Name="CompileMsBuildTasks">
     <MSBuild Projects="$(SrcFolder)\Tools\MSBuild.Orchard.Tasks\MSBuild.Orchard.Tasks.csproj" Targets="Build" Properties="Configuration=Release;OutputPath=$(MsBuildTasksFolder)" />
