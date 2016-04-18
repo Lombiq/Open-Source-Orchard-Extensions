@@ -23,7 +23,7 @@
     <BuildPlatform Condition="$(ProgramW6432) != ''">x64</BuildPlatform>
     <BuildPlatform Condition="$(BuildPlatform) == ''">x86</BuildPlatform>
     <Version>$(BUILD_NUMBER)</Version>
-    <Configuration Condition="$(Configuration) == ''" xmlns="">Release</Configuration>
+    <Configuration Condition="$(Configuration) == ''">Release</Configuration>
   </PropertyGroup>
   <Import Project="$(LibFolder)\msbuild\MSBuild.Community.Tasks.Targets" />
   <Target Name="Build">
