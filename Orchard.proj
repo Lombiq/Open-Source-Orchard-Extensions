@@ -292,5 +292,5 @@
     </CompileTypeScriptFiles>
   </Target>
   <UsingTask AssemblyFile="$(MsBuildTasksFolder)\MSBuild.Orchard.Tasks.dll" TaskName="MSBuild.Orchard.Tasks.CompileTypeScriptFiles" />
-  <Import Project="$(LibFolder)\slowcheetah\SlowCheetah.Transforms.targets" xmlns="" />
+  <Import Project="$(LibFolder)\slowcheetah\SlowCheetah.Transforms.targets" />
 </Project>
