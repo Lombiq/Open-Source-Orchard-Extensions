@@ -247,7 +247,7 @@
         a module or theme contains a subfolder with the same name as another module or theme. 
         -->
       <Stage-Modules Include="$(WebSitesFolder)\%(Stage-Modules-Names.Identity)\**\*" Exclude="@(Stage-Bin-Exclude)">
-        <ModuleName>%(Stage-Modules-Names.Identity)></ModuleName>
+        <ModuleName>%(Stage-Modules-Names.Identity)</ModuleName>
       </Stage-Modules>
       <Stage-Modules-Binaries Include="$(WebSitesFolder)\%(Stage-Modules-Names.Identity)\**\bin\**\*">
         <ModuleName>%(Stage-Modules-Names.Identity)</ModuleName>
@@ -257,7 +257,7 @@
         <ThemeName>%(Stage-Themes-Names.Identity)</ThemeName>
       </Stage-Themes-Default>
       <Stage-Themes-Custom Include="$(WebSitesFolder)\%(Stage-Themes-Names.Identity)\**\*" Exclude="@(Stage-Bin-Exclude)">
-        <ThemeName>%(Stage-Themes-Names.Identity)></ThemeName>
+        <ThemeName>%(Stage-Themes-Names.Identity)</ThemeName>
       </Stage-Themes-Custom>
       <!--
            Note. Binaries are not copied for themes in the default Themes project. 
