@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom modules", "Custom modules", "{350812A3-4F78-49D0-BB34-D05180751117}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Modules", "Custom Modules", "{350812A3-4F78-49D0-BB34-D05180751117}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piedone.HelpfulLibraries", "Orchard.Web\Modules\Piedone.HelpfulLibraries\Piedone.HelpfulLibraries.csproj", "{EA61AD10-39D6-41A9-B12B-227F50C54158}"
 EndProject
@@ -52,7 +52,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Hosting.Readonly", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Hosting.RecipeRemoteExecutor", "Orchard.Web\Modules\Lombiq.Hosting.RecipeRemoteExecutor\Lombiq.Hosting.RecipeRemoteExecutor.csproj", "{24F5CCAA-AB12-428D-BB22-965412926EB2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom themes", "Custom themes", "{6D494A58-697D-4C6C-9B4A-158D5BCB137E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Themes", "Custom Themes", "{6D494A58-697D-4C6C-9B4A-158D5BCB137E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.PrettyGoodBootstrapBaseTheme.Sample", "Orchard.Web\Themes\Lombiq.PrettyGoodBootstrapBaseTheme.Sample\Lombiq.PrettyGoodBootstrapBaseTheme.Sample.csproj", "{DE7F0EC4-DAC2-48B4-924B-7D8A1E669EE6}"
 EndProject
