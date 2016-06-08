@@ -390,7 +390,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Conditions", "Orcha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Resources", "Orchard.Web\Modules\Orchard.Resources\Orchard.Resources.csproj", "{D4E8F7C8-2DB2-4C50-A422-DA1DF1E3CC73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.RssReader", "Orchard.Web\Modules\Lombiq.RssReader\Lombiq.RssReader.csproj", "{3C19E03B-6F1D-472C-BEBC-C830AE0EB9E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.FeedAggregator", "Orchard.Web\Modules\Lombiq.FeedAggregator\Lombiq.FeedAggregator.csproj", "{3C19E03B-6F1D-472C-BEBC-C830AE0EB9E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
