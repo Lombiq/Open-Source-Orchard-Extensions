@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom modules", "Custom modules", "{350812A3-4F78-49D0-BB34-D05180751117}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Modules", "Custom Modules", "{350812A3-4F78-49D0-BB34-D05180751117}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piedone.HelpfulLibraries", "Orchard.Web\Modules\Piedone.HelpfulLibraries\Piedone.HelpfulLibraries.csproj", "{EA61AD10-39D6-41A9-B12B-227F50C54158}"
 EndProject
@@ -52,7 +52,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Hosting.Readonly", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Hosting.RecipeRemoteExecutor", "Orchard.Web\Modules\Lombiq.Hosting.RecipeRemoteExecutor\Lombiq.Hosting.RecipeRemoteExecutor.csproj", "{24F5CCAA-AB12-428D-BB22-965412926EB2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom themes", "Custom themes", "{6D494A58-697D-4C6C-9B4A-158D5BCB137E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Themes", "Custom Themes", "{6D494A58-697D-4C6C-9B4A-158D5BCB137E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.PrettyGoodBootstrapBaseTheme.Sample", "Orchard.Web\Themes\Lombiq.PrettyGoodBootstrapBaseTheme.Sample\Lombiq.PrettyGoodBootstrapBaseTheme.Sample.csproj", "{DE7F0EC4-DAC2-48B4-924B-7D8A1E669EE6}"
 EndProject
@@ -389,6 +389,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Conditions", "Orchard.Web\Modules\Orchard.Conditions\Orchard.Conditions.csproj", "{98251EAE-A41B-47B2-AA91-E28B8482DA70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Resources", "Orchard.Web\Modules\Orchard.Resources\Orchard.Resources.csproj", "{D4E8F7C8-2DB2-4C50-A422-DA1DF1E3CC73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Fields", "Orchard.Web\Modules\Lombiq.Fields\Lombiq.Fields.csproj", "{7497F55A-8D4B-4780-8811-D105E3694C4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.FeedAggregator", "Orchard.Web\Modules\Lombiq.FeedAggregator\Lombiq.FeedAggregator.csproj", "{3C19E03B-6F1D-472C-BEBC-C830AE0EB9E9}"
 EndProject
@@ -1768,6 +1770,16 @@ Global
 		{3C19E03B-6F1D-472C-BEBC-C830AE0EB9E9}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{3C19E03B-6F1D-472C-BEBC-C830AE0EB9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C19E03B-6F1D-472C-BEBC-C830AE0EB9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7497F55A-8D4B-4780-8811-D105E3694C4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1911,6 +1923,7 @@ Global
 		{98251EAE-A41B-47B2-AA91-E28B8482DA70} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
 		{D4E8F7C8-2DB2-4C50-A422-DA1DF1E3CC73} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
 		{3C19E03B-6F1D-472C-BEBC-C830AE0EB9E9} = {350812A3-4F78-49D0-BB34-D05180751117}
+		{7497F55A-8D4B-4780-8811-D105E3694C4E} = {350812A3-4F78-49D0-BB34-D05180751117}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
