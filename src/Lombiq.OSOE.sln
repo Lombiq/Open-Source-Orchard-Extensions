@@ -396,6 +396,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.FeedAggregator", "Or
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Projections", "Orchard.Web\Modules\Lombiq.Projections\Lombiq.Projections.csproj", "{179620FC-7773-4DE1-A5B8-BC400C1209DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Layouts", "Orchard.Web\Modules\Lombiq.Layouts\Lombiq.Layouts.csproj", "{EC647C79-C673-4243-A8A2-26E4876CF55B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1792,6 +1794,16 @@ Global
 		{179620FC-7773-4DE1-A5B8-BC400C1209DC}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{179620FC-7773-4DE1-A5B8-BC400C1209DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{179620FC-7773-4DE1-A5B8-BC400C1209DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC647C79-C673-4243-A8A2-26E4876CF55B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1937,6 +1949,7 @@ Global
 		{7497F55A-8D4B-4780-8811-D105E3694C4E} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{3C19E03B-6F1D-472C-BEBC-C830AE0EB9E9} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{179620FC-7773-4DE1-A5B8-BC400C1209DC} = {350812A3-4F78-49D0-BB34-D05180751117}
+		{EC647C79-C673-4243-A8A2-26E4876CF55B} = {350812A3-4F78-49D0-BB34-D05180751117}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
