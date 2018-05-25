@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Modules", "Custom Modules", "{350812A3-4F78-49D0-BB34-D05180751117}"
 EndProject
@@ -399,6 +399,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Layouts", "Orchard.Web\Modules\Lombiq.Layouts\Lombiq.Layouts.csproj", "{EC647C79-C673-4243-A8A2-26E4876CF55B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.OrchardContentStressTest", "Orchard.Web\Modules\Lombiq.OrchardContentStressTest\Lombiq.OrchardContentStressTest.csproj", "{0FEFFDDB-DBA4-4358-8565-3F3DF3AD7139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Privacy", "Orchard.Web\Modules\Lombiq.Privacy\Lombiq.Privacy.csproj", "{6384F875-76DF-4417-A7D4-6F7B9705AE3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1816,6 +1818,16 @@ Global
 		{0FEFFDDB-DBA4-4358-8565-3F3DF3AD7139}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{0FEFFDDB-DBA4-4358-8565-3F3DF3AD7139}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FEFFDDB-DBA4-4358-8565-3F3DF3AD7139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1963,8 +1975,10 @@ Global
 		{179620FC-7773-4DE1-A5B8-BC400C1209DC} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{EC647C79-C673-4243-A8A2-26E4876CF55B} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{0FEFFDDB-DBA4-4358-8565-3F3DF3AD7139} = {350812A3-4F78-49D0-BB34-D05180751117}
+		{6384F875-76DF-4417-A7D4-6F7B9705AE3D} = {350812A3-4F78-49D0-BB34-D05180751117}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
+		SolutionGuid = {721AE6BC-E17A-464A-B2B0-B3A4D3CCAE0B}
 	EndGlobalSection
 EndGlobal
