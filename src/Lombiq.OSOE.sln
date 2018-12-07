@@ -402,6 +402,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.OrchardContentStress
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Privacy", "Orchard.Web\Modules\Lombiq.Privacy\Lombiq.Privacy.csproj", "{6384F875-76DF-4417-A7D4-6F7B9705AE3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.RepositoryMarkdownContent", "Orchard.Web\Modules\Lombiq.RepositoryMarkdownContent\Lombiq.RepositoryMarkdownContent.csproj", "{4B7BCF03-0542-4C60-B856-A907AC292316}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1828,6 +1830,16 @@ Global
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7BCF03-0542-4C60-B856-A907AC292316}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1976,9 +1988,10 @@ Global
 		{EC647C79-C673-4243-A8A2-26E4876CF55B} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{0FEFFDDB-DBA4-4358-8565-3F3DF3AD7139} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D} = {350812A3-4F78-49D0-BB34-D05180751117}
+		{4B7BCF03-0542-4C60-B856-A907AC292316} = {350812A3-4F78-49D0-BB34-D05180751117}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 		SolutionGuid = {721AE6BC-E17A-464A-B2B0-B3A4D3CCAE0B}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 	EndGlobalSection
 EndGlobal
