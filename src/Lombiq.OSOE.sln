@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29905.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Modules", "Custom Modules", "{350812A3-4F78-49D0-BB34-D05180751117}"
 EndProject
@@ -407,6 +407,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.RepositoryMarkdownContent", "Orchard.Web\Modules\Lombiq.RepositoryMarkdownContent\Lombiq.RepositoryMarkdownContent.csproj", "{4B7BCF03-0542-4C60-B856-A907AC292316}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onestop.Seo", "Orchard.Web\Modules\Onestop.Seo\Onestop.Seo.csproj", "{6FAF760D-BFF1-4395-AF35-E55498D76140}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{B0F77C50-7F6F-4462-95E4-8B81A0A5DAED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{D428FD38-E260-4B90-B101-4A2AA3CF8F47}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\build.yml = ..\.github\workflows\build.yml
+		..\.github\workflows\validate-pull-request.yml = ..\.github\workflows\validate-pull-request.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2004,9 +2012,10 @@ Global
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{4B7BCF03-0542-4C60-B856-A907AC292316} = {350812A3-4F78-49D0-BB34-D05180751117}
 		{6FAF760D-BFF1-4395-AF35-E55498D76140} = {350812A3-4F78-49D0-BB34-D05180751117}
+		{D428FD38-E260-4B90-B101-4A2AA3CF8F47} = {B0F77C50-7F6F-4462-95E4-8B81A0A5DAED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 		SolutionGuid = {721AE6BC-E17A-464A-B2B0-B3A4D3CCAE0B}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 	EndGlobalSection
 EndGlobal

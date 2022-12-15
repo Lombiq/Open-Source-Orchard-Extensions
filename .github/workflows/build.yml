@@ -1,0 +1,39 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches:
+      - dev
+
+jobs:
+  call-msbuild-and-test-workflow-larger-runner:
+    name: Build (larger runner)
+    if: github.ref_name != github.event.repository.default_branch
+    uses: Lombiq/GitHub-Actions/.github/workflows/msbuild-and-test.yml@dev
+    secrets:
+      CHECKOUT_TOKEN: ${{ secrets.LOMBIQBOT_GITHUB_PERSONAL_ACCESS_TOKEN }}
+    with:
+      cancel-workflow-on-failure: "false"
+      build-directory: "src"
+      solution-or-project-path: "Lombiq.OSOE.sln"
+      build-treat-warnings-as-errors: "false"
+      build-enable-code-analysis: "false"
+      test-disable: "true"
+      timeout-minutes: 10
+      machine-type: "windows-latest-8core"
+
+  call-msbuild-and-test-workflow-standard-runner:
+    name: Build
+    if: github.ref_name == github.event.repository.default_branch
+    uses: Lombiq/GitHub-Actions/.github/workflows/msbuild-and-test.yml@dev
+    secrets:
+      CHECKOUT_TOKEN: ${{ secrets.LOMBIQBOT_GITHUB_PERSONAL_ACCESS_TOKEN }}
+    with:
+      cancel-workflow-on-failure: "false"
+      build-directory: "src"
+      solution-or-project-path: "Lombiq.OSOE.sln"
+      build-treat-warnings-as-errors: "false"
+      build-enable-code-analysis: "false"
+      test-disable: "true"
+      timeout-minutes: 20
