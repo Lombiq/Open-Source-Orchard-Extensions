@@ -21,7 +21,7 @@ jobs:
       build-enable-code-analysis: "false"
       test-disable: "true"
       timeout-minutes: 10
-      machine-type: "windows-latest-8core"
+      machine-type: "windows-2025-8core"
 
   call-msbuild-and-test-workflow-standard-runner:
     name: Build
